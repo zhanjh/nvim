@@ -9,7 +9,7 @@ set textwidth=98
 let mapleader = ','
 let g:mapleader = ','
 
-nnoremap <leader>R :source ~/.vimrc<cr>
+nnoremap <leader>R :source ~/.config/nvim/init.vim<cr>
 
 set mouse=a " mouse
 

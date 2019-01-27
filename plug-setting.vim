@@ -48,7 +48,8 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_php_phpcs_standard = 'PSR2' " php
 let g:ale_php_phpstan_level = 7
 
-let g:ale_linters = {'rust': ['cargo', 'rls', 'rustc']}
+" let g:ale_linters = {'rust': ['cargo', 'rls', 'rustc']}
+let g:ale_linters = {'rust': ['cargo', 'rustc']}
 let g:ale_rust_rls_toolchain = 'stable'
 
 highlight ALEError cterm=reverse,bold ctermfg=NONE ctermbg=NONE
@@ -56,8 +57,14 @@ highlight ALEWarning cterm=reverse,bold ctermfg=NONE ctermbg=NONE
 
 " ack.vim
 " https://github.com/mileszs/ack.vim
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+
+"if executable('ag')
+"  let g:ackprg = 'ag --vimgrep'
+"endif
+
+" https://github.com/BurntSushi/ripgrep/issues/425
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep --no-heading --smart-case'
 endif
 nnoremap <Leader>a :Ack!<Space>
 
@@ -79,10 +86,11 @@ let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ }
 
-noremap <silent> H :call LanguageClient_textDocument_hover()<CR>
-noremap <silent> Z :call LanguageClient_textDocument_definition()<CR>
-noremap <silent> R :call LanguageClient_textDocument_rename()<CR>
-noremap <silent> S :call LanugageClient_textDocument_documentSymbol()<CR>
+noremap <silent> <leader>h :call LanguageClient_textDocument_hover()<CR>
+noremap <silent> <leader>d :call LanguageClient_textDocument_definition()<CR>
+noremap <silent> <leader>re :call LanguageClient_textDocument_rename()<CR>
+noremap <silent> <leader>ds :call LanguageClient_textDocument_documentSymbol()<CR>
+                         
 
 " ----------
 "  ncm2/ncm2
@@ -108,3 +116,12 @@ inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" -----------------------
+" junegunn/vim-easy-align
+" -----------------------
+
+" Align GitHub-flavored Markdown tables
+" The <Bslash> key is also the | key
+au FileType markdown vmap <leader><bslash> :EasyAlign*<Bar><Enter>
+vmap ga <plug>(EasyAlign)

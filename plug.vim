@@ -21,12 +21,12 @@ Plug 'mhinz/vim-signify'
 Plug 'vim-scripts/wombat256.vim'
 "Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
-
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'junegunn/vim-easy-align'
 
 
 " assuming you're using vim-plug: https://github.com/junegunn/vim-plug
