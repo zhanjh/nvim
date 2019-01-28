@@ -28,8 +28,8 @@ nvim +PlugInstall +UpdateRemotePlugins +q
 
 ### NERDTree
 
-* <leader>k,   `:NERDTreeToggle<CR>`, " Toggle NERDTree
-* <leader>y,   `:NERDTreeFind<CR>`,   " expand to the path of the file in the current buffer
+* `<leader>k`,   `:NERDTreeToggle<CR>`, " Toggle NERDTree
+* `<leader>y`,   `:NERDTreeFind<CR>`,   " expand to the path of the file in the current buffer
 
 actions:
 
@@ -44,40 +44,40 @@ actions:
 
 ### fzf
 
-* <c-p>,         :FZF<CR>,                 " Search files
-* <leader><Tab>, <Plug>(fzf-maps-n/i/x/o), " List mappings
+* `<c-p>`,         :`FZF<CR>`,                 " Search files
+* `<leader><Tab>`, `<Plug>(fzf-maps-n/i/x/o)`, " List mappings
 
 actions:
 
-* <c-j>&<c-n>, " move down
-* <c-k>&<c-p>, " move up
-* <c-t>,       " tab split
-* <c-x>,       " split
-* <c-v>,       " vsplit
+* `<c-j>`&`<c-n>`, " move down
+* `<c-k>`&`<c-p>`, " move up
+* `<c-t>`,         " tab split
+* `<c-x>`,         " split
+* `<c-v>`,         " vsplit
 
 ### ale
 
-* <C-k>, <Plug>(ale_previous_wrap), " Move to the previous error
-* <C-j>, <Plug>(ale_next_wrap),     " Move to the next error
+* `<C-k>`, `<Plug>(ale_previous_wrap)`, " Move to the previous error
+* `<C-j>`, `<Plug>(ale_next_wrap)`,     " Move to the next error
 
 ### ack.vim
 
-* <Leader>a, :Ack!<Space>, " Search the content of all the files in the current project
+* `<Leader>a`, `:Ack!<Space>`, " Search the content of all the files in the current project
 
 
 ### LanguageClient-neovim
 
-* <leader>h,  :call LanguageClient_textDocument_hover()<CR>,          " Hover/Get identifier info
-* <leader>d,  :call LanguageClient_textDocument_definition()<CR>,     " Goto definition
-* <leader>re, :call LanguageClient_textDocument_rename()<CR>,         " Rename
-* <leader>ds, :call LanguageClient_textDocument_documentSymbol()<CR>, " Workspace/Document symbols query
+* `<leader>h`,  `:call LanguageClient_textDocument_hover()<CR>`,          " Hover/Get identifier info
+* `<leader>d`,  `:call LanguageClient_textDocument_definition()<CR>`,     " Goto definition
+* `<leader>re`, `:call LanguageClient_textDocument_rename()<CR>`,         " Rename
+* `<leader>ds`, `:call LanguageClient_textDocument_documentSymbol()<CR>`, " Workspace/Document symbols query
 
 
 ### ncm2
 
-* <c-c>,   <ESC>, " Map CTRL-C to <ESC> in insert mode
-* <Tab>,   <c-n>, " Next item in the popup menu
-* <S-Tab>, <c-p>, " Previous item in the popup menu
+* `<c-c>`,   `<ESC>`, " Map CTRL-C to `<ESC>` in insert mode
+* `<Tab>`,   `<c-n>`, " Next item in the popup menu
+* `<S-Tab>`, `<c-p>`, " Previous item in the popup menu
 
 ### gitv
 
@@ -88,9 +88,9 @@ Try `:help gitv`
 
 actions:
 
-* <cr>, Opens a commit
-* J&<c-n>, Move down to next commit and open it
-* K&<c-p>, Move up and open
+* `<cr>`, Opens a commit
+* J&`<c-n>`, Move down to next commit and open it
+* K&`<c-p>`, Move up and open
 * o, Split
 * O, Open in a new tab
 * q, Quit gitv
@@ -103,8 +103,8 @@ actions:
 
 actions:
 
-* o or <cr> on a commit to display the content of it
-* o or <cr> on commits to display the diff in the range
+* o or `<cr>` on a commit to display the content of it
+* o or `<cr>` on commits to display the diff in the range
 * O opens a new tab instead
 * gb for :Gbrowse
 * ]] and [[ to move between commits
