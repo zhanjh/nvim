@@ -28,8 +28,8 @@ nvim +PlugInstall +UpdateRemotePlugins +q
 
 ### NERDTree
 
-* <leader>k,   :NERDTreeToggle<CR>, " Toggle NERDTree
-* <leader>y,   :NERDTreeFind<CR>,   " expand to the path of the file in the current buffer
+* <leader>k,   `:NERDTreeToggle<CR>`, " Toggle NERDTree
+* <leader>y,   `:NERDTreeFind<CR>`,   " expand to the path of the file in the current buffer
 
 actions:
 
