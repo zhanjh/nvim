@@ -35,7 +35,6 @@ set showmatch " show matching braces
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme wombat256mod
 
 " Search
 set ignorecase " case insensitive searching
@@ -73,3 +72,4 @@ set cursorline
 " http://vim.wikia.com/wiki/All_folds_open_when_opening_a_file
 set foldmethod=syntax
 set foldlevelstart=20
+set tags=tags

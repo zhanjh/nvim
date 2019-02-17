@@ -1,3 +1,8 @@
-source ~/.config/nvim/plug.vim
-source ~/.config/nvim/setting.vim
-source ~/.config/nvim/plug-setting.vim
+let s:path = expand('<sfile>:p:h')
+
+" echo s:path
+
+execute 'source ' . s:path . '/src/setting.vim'
+execute 'source ' . s:path . '/src/plug.vim'
+execute 'source ' . s:path . '/src/lib/outline.vim'
+execute 'source ' . s:path . '/src/shortcuts.vim'
