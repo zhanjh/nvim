@@ -13,7 +13,7 @@ nnoremap <leader>R :source ~/.config/nvim/init.vim<cr>
 
 set mouse=a " mouse
 
-"set clipboard+=unnamedplus
+set clipboard+=unnamedplus
 "set clipboard=unnamed " todo need more digging
 
 set nu " line number
