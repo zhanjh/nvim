@@ -5,7 +5,7 @@
 Clone the repo of 'zhanjh/nvim' to ~/.config/nvim
 
 ```
-git clone https://github.com/zhanjh/.vim ~/.config/nvim
+git clone https://github.com/zhanjh/nvim ~/.config/nvim
 ```
 
 ## Install vim-plug
