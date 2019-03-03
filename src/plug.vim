@@ -27,6 +27,7 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/vim-easy-align'
+Plug 'vim-scripts/DrawIt'
 
 
 " # Completion

@@ -22,7 +22,7 @@ nnoremap <Leader>a :Ack!<Space>
 noremap <silent> <leader>h :call LanguageClient_textDocument_hover()<CR>
 noremap <silent> <leader>d :call LanguageClient_textDocument_definition()<CR>
 noremap <silent> <leader>re :call LanguageClient_textDocument_rename()<CR>
-noremap <silent> <leader>ds :call LanguageClient_textDocument_documentSymbol()<CR>
+noremap <silent> <leader>sb :call LanguageClient_textDocument_documentSymbol()<CR>
                          
 
 
