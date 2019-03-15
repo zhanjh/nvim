@@ -43,6 +43,7 @@ set hlsearch
 set incsearch " set incremental search, like modern browsers
 
 " Tab & indent control
+filetype plugin indent on
 set expandtab " insert space characters whenever the tab key is pressed
 set tabstop=4 " insert 4 spaces for a tab
 set shiftwidth=4 " number of spaces to use for indent and unindent
