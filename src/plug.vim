@@ -143,3 +143,6 @@ set completeopt=noinsert,menuone,noselect
  " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
     " found' messages
 set shortmess+=c
+
+" #rust.vim
+let g:rust_recommended_style = 0

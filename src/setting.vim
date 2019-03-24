@@ -44,7 +44,11 @@ set incsearch " set incremental search, like modern browsers
 
 " Tab & indent control
 filetype plugin indent on
-set expandtab " insert space characters whenever the tab key is pressed
+
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
+" set expandtab " insert space characters whenever the tab key is pressed
+" set softtabstop=4 " edit as if the tabs are 4 characters wide
+set softtabstop=0 noexpandtab
 set tabstop=4 " insert 4 spaces for a tab
 set shiftwidth=4 " number of spaces to use for indent and unindent
 set ai
@@ -54,7 +58,6 @@ set autoindent " automatically set indent of new line
 set smartindent
 
 set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
-set softtabstop=4 " edit as if the tabs are 4 characters wide
 set shiftround " round indent to a multiple of 'shiftwidth'
 
 " Toggle invisible characters
