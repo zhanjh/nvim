@@ -48,17 +48,16 @@ filetype plugin indent on
 " https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
 " set expandtab " insert space characters whenever the tab key is pressed
 " set softtabstop=4 " edit as if the tabs are 4 characters wide
-set softtabstop=0 noexpandtab
-set tabstop=4 " insert 4 spaces for a tab
-set shiftwidth=4 " number of spaces to use for indent and unindent
-set ai
+
+set tabstop=2 softtabstop=0 noexpandtab shiftwidth=2
+set shiftround smartindent smarttab autoindent
+autocmd FileType javascript setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=2
+autocmd FileType html setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=2
+autocmd FileType scss setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=2
+autocmd FileType css setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=2
+autocmd FileType php setlocal tabstop=8 softtabstop=0 expandtab shiftwidth=2
+
 retab " To change all the existing tab characters to match the current tab settings,
-
-set autoindent " automatically set indent of new line
-set smartindent
-
-set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
-set shiftround " round indent to a multiple of 'shiftwidth'
 
 " Toggle invisible characters
 set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
