@@ -20,7 +20,67 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ## Install plugs
 
 ```shell
+sudo pacman -S python-pip python-setuptools
+sudo pip install --upgrade neovim
+```
+
+```shell
 nvim +PlugInstall +UpdateRemotePlugins +q
+```
+
+打开neovim, 执行`:checkhealth`查看结果
+
+```
+
+health#LanguageClient#check
+========================================================================
+  - OK: binary found: /home/zjh/.local/share/nvim/plugged/LanguageClient-neovim/bin/languageclient
+  - OK: languageclient 0.1.146
+  - INFO: Floating window is not supported. Preview window will be used for hover
+
+health#nvim#check
+========================================================================
+## Configuration
+  - OK: no issues found
+
+## Performance
+  - OK: Build type: Release
+
+## Remote Plugins
+  - OK: Up to date
+
+## terminal
+  - INFO: key_backspace (kbs) terminfo entry: key_backspace=^H
+  - INFO: key_dc (kdch1) terminfo entry: key_dc=\E[3~
+  - INFO: $SSH_TTY='/dev/pts/0'
+
+## tmux
+  - OK: escape-time: 10ms
+  - INFO: $TERM: screen-256color
+
+health#provider#check
+========================================================================
+## Clipboard (optional)
+  - OK: Clipboard tool found: tmux
+
+## Python 2 provider (optional)
+  - WARNING: No Python executable found that can `import neovim`. Using the first available executable for diagnostics.
+  - ERROR: Python provider error:
+    - ADVICE:
+      - provider/pythonx: Could not load Python 2:
+          python2 not found in search path or not executable.
+          python2.7 not found in search path or not executable.
+          python2.6 not found in search path or not executable.
+          /usr/bin/python is Python 3.7 and cannot provide Python 2.
+  - INFO: Executable: Not found
+
+## Python 3 provider (optional)
+  - INFO: `g:python3_host_prog` is not set.  Searching for python3 in the environment.
+  - INFO: Executable: /usr/bin/python3
+  - INFO: Python version: 3.7.3
+  - INFO: pynvim version: 0.3.2
+  - OK: Latest pynvim is installed.
+
 ```
 
 ## Get Started
