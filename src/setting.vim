@@ -32,7 +32,8 @@ set showmatch " show matching braces
 "set mat=2 " how many tenths of a second to blink
 
 " color
-syntax enable
+"syntax enable
+syntax on
 set t_Co=256
 set background=dark
 

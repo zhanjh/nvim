@@ -20,7 +20,10 @@ Plug 'mhinz/vim-signify'
 "Plug 'janko-m/vim-test'
 Plug 'vim-scripts/wombat256.vim'
 "Plug 'majutsushi/tagbar'
+
+" Programming
 Plug 'rust-lang/rust.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
@@ -31,6 +34,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 Plug 'junegunn/vim-easy-align'
 Plug 'vim-scripts/DrawIt'
 
+Plug 'sheerun/vim-polyglot'
 
 " # Completion
 " assuming you're using vim-plug: https://github.com/junegunn/vim-plug
