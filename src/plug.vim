@@ -20,6 +20,7 @@ Plug 'mhinz/vim-signify'
 "Plug 'janko-m/vim-test'
 Plug 'vim-scripts/wombat256.vim'
 "Plug 'majutsushi/tagbar'
+Plug 'editorconfig/editorconfig-vim'
 
 " Programming
 Plug 'rust-lang/rust.vim'
