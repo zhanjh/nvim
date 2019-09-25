@@ -77,3 +77,4 @@ set cursorline
 set foldmethod=syntax
 set foldlevelstart=20
 set tags=tags
+set fo-=t
