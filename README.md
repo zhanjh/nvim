@@ -194,6 +194,16 @@ actions:
 | `:verbose map`      | where each mapping was defined.                 |
 | `:help map-listing` | help us to understand the listing mappings.     |
 
+
+## Tips
+
+### Debug unexpected option settings
+<https://vim.fandom.com/wiki/Debug_unexpected_option_settings>
+
+```
+:verbose set fo?
+```
+
 ## ref.
 
 * <https://neovim.io/>
