@@ -21,7 +21,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ```shell
 sudo pacman -S python-pip python-setuptools
-sudo pip install --upgrade neovim
+# sudo pip install --upgrade neovim
+python3 -m pip install --user --upgrade pynvim
 ```
 
 ```shell
